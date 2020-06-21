@@ -5,7 +5,7 @@ import kotlin.random.Random
 
 object Utils {
 
-    fun buildGraph(nodeCount: Int, maxEdgesForNode: Int = nodeCount - 1, directed: Boolean = false): List<INode> {
+    fun buildGraph(nodeCount: Int, maxEdgesForNode: Int = nodeCount - 1, directed: Boolean = false): List<Node> {
         if (maxEdgesForNode < 1 || maxEdgesForNode >= nodeCount) {
             throw Exception("incorrect edges")
         }

@@ -1,13 +1,8 @@
 package com.astashin.graph
 
-interface INode {
+class Node(val id: Int) {
 
-    val id: Int
+    val edges = ArrayList<Node>()
 
-    val edges: List<INode>
-}
-
-class Node(override val id: Int) : INode {
-
-    override val edges = ArrayList<INode>()
+    var isVisited = false
 }
